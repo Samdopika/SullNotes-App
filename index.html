@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.2/mammoth.browser.min.js"></script>
+</head>
+<body>
+    <div class="note-container">
+        <textarea id="noteArea" placeholder="Type your note..."></textarea>
+        <div class="buttons">
+            <button class="saveBtn" id="saveTxt"><img src="txt-icon.png" alt="txt icon"> TXT</button>
+            <button class="saveBtn" id="saveWord"><img src="word-icon.png" alt="word icon"> Word</button>
+            <button class="saveBtn" id="savePdf"><img src="pdf-icon.png" alt="pdf icon"> PDF</button>
+        </div>
+    </div>
+    <a id="downloadLink" style="display: none;"></a>
+    <script src="script.js"></script>
+</body>
+</html>
